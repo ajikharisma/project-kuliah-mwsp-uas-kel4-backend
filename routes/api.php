@@ -6,6 +6,8 @@ use App\Http\Controllers\API\ProductController;
 use App\Http\Controllers\ProdukController;
 use App\Http\Controllers\KeranjangController;
 use App\Http\Controllers\WishlistController;
+use App\Http\Controllers\API\ChatController;
+use App\Http\Controllers\ApI\MessageController;
 
 // --------------- Register & Login (PUBLIC) ----------------
 Route::post('/register', [AuthenticationController::class, 'register']);
@@ -41,6 +43,11 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/wishlist', [WishlistController::class, 'index']);
     Route::post('/wishlist', [WishlistController::class, 'store']);
     Route::delete('/wishlist/{produk_id}', [WishlistController::class, 'destroy']);
+
+     // CHAT
+    Route::get('/chats', [ChatController::class, 'index']);
+    Route::get('/chats/{chat}', [MessageController::class, 'show']);
+    Route::post('/messages', [MessageController::class, 'store']);
 });
 
 
