@@ -43,7 +43,7 @@ class ProdukSeeder extends Seeder
             [
                 'nama' => 'Grilled Chicken Salad',
                 'gambar_url' => 'https://cookingformysoul.com/wp-content/uploads/2019/01/grilled-chicken-salad-min.jpg',
-                'kategori' => 'Food',
+                'kategori' => 'Foods',
                 'harga' => 10.99,
                 'deskripsi' => 'Fresh mixed greens with grilled chicken breast, cherry tomatoes, and balsamic dressing.',
                 'created_at' => now(),
@@ -52,7 +52,7 @@ class ProdukSeeder extends Seeder
             [
                 'nama' => 'Spaghetti Carbonara',
                 'gambar_url' => 'https://www.twopeasandtheirpod.com/wp-content/uploads/2023/01/Spaghetti-Carbonara168787.jpg',
-                'kategori' => 'Food',
+                'kategori' => 'Foods',
                 'harga' => 13.99,
                 'deskripsi' => 'Classic Italian pasta with creamy sauce, bacon, and parmesan cheese.',
                 'created_at' => now(),
@@ -61,7 +61,7 @@ class ProdukSeeder extends Seeder
             [
                 'nama' => 'Fish and Chips',
                 'gambar_url' => 'https://wallpapers.com/images/file/perfectly-fried-fish-and-chips-1qfc430mwbqnmqy3.jpg',
-                'kategori' => 'Food',
+                'kategori' => 'Foods',
                 'harga' => 11.49,
                 'deskripsi' => 'Crispy battered fish served with golden fries and tartar sauce.',
                 'created_at' => now(),
