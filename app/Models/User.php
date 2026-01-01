@@ -19,10 +19,13 @@ class User extends Authenticatable
      * @var list<string>
      */
     protected $fillable = [
-        'name',
+        'username',
         'email',
         'password',
+        'alamat',
+        'gambar_url',
     ];
+
 
     /**
      * The attributes that should be hidden for serialization.
@@ -45,5 +48,13 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }
+
+    /**
+     * Get the cart items for the user.
+     */
+    public function keranjang()
+    {
+        return $this->hasMany(Keranjang::class);
     }
 }
