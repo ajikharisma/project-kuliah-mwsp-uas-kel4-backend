@@ -25,6 +25,7 @@ class DatabaseSeeder extends Seeder
         // Seed produk table
         $this->call([
             ProdukSeeder::class,
+            CourierSeeder::class,
         ]);
     }
 }
