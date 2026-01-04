@@ -8,6 +8,7 @@ use App\Http\Controllers\KeranjangController;
 use App\Http\Controllers\WishlistController;
 use App\Http\Controllers\API\ChatController;
 use App\Http\Controllers\ApI\MessageController;
+use App\Http\Controllers\RatingController;
 
 // --------------- Register & Login (PUBLIC) ----------------
 Route::post('/register', [AuthenticationController::class, 'register']);
@@ -48,6 +49,10 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/chats', [ChatController::class, 'index']);
     Route::get('/chats/{chat}', [MessageController::class, 'show']);
     Route::post('/messages', [MessageController::class, 'store']);
+
+    // Ratings
+    Route::get('/ratings/{produk_id}', [RatingController::class, 'index']);
+    Route::post('/ratings', [RatingController::class, 'store'])->middleware('auth:sanctum');
 });
 
 
