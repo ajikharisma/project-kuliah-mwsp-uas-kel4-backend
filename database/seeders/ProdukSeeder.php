@@ -10,6 +10,7 @@ class ProdukSeeder extends Seeder
     public function run(): void
     {
         $produk = [
+
             // Beverages Category
             [
                 'nama' => 'Fresh Orange Juice',
@@ -189,6 +190,62 @@ class ProdukSeeder extends Seeder
                 'kategori' => 'Burger',
                 'harga' => 11.49,
                 'deskripsi' => 'Beef patty topped with sautéed mushrooms and melted Swiss cheese.',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            // Promotions Category
+            [
+                'nama' => 'Hot Mocha Cappuccino Latte',
+                'gambar_url' => 'https://i.pinimg.com/736x/de/d8/5d/ded85de22eaedcf4416926633ae13eb9.jpg',
+                'kategori' => 'Promotions',
+                'harga' => 5.88,
+                'deskripsi' => 'Freshly squeezed orange juice packed with vitamin C. Perfect for a healthy start to your day.',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'nama' => 'Hot Sweet Indonesian Tea',
+                'gambar_url' => 'https://i.pinimg.com/1200x/79/0e/8a/790e8a830c75cbd30afb6ea25b73b914.jpg',
+                'kategori' => 'Promotions',
+                'harga' => 2.5,
+                'deskripsi' => 'Smooth espresso mixed with cold milk and ice. A refreshing coffee experience.',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'nama' => 'Espresso Bold Edition',
+                'gambar_url' => 'https://i.pinimg.com/736x/34/29/22/3429221699bf20590e953490a66a220a.jpg',
+                'kategori' => 'Promotions',
+                'harga' => 4.2,
+                'deskripsi' => 'A perfect blend of green tea and fresh lemon. Healthy and refreshing.',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'nama' => 'Sunrise Orange Splash',
+                'gambar_url' => 'https://i.pinimg.com/736x/0c/47/0a/0c470abad960976b83cf00a3102aa37f.jpg',
+                'kategori' => 'Promotions',
+                'harga' => 3.2,
+                'deskripsi' => 'Freshly squeezed premium oranges served chilled. A bright, refreshing drink to boost your mood and start the day right.',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'nama' => 'Signature Iced Latte With Chocho',
+                'gambar_url' => 'https://i.pinimg.com/736x/55/33/7d/55337dfdd536566b9616147935026b0b.jpg',
+                'kategori' => 'Promotions',
+                'harga' => 5.2,
+                'deskripsi' => 'Our signature espresso blended with creamy milk and ice. Smooth, bold, and perfectly balanced for coffee lovers.',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'nama' => 'Zen Green Lemonade',
+                'gambar_url' => 'https://i.pinimg.com/736x/ec/f2/8e/ecf28e014f85c6e4014d73d1db37b253.jpg',
+                'kategori' => 'Promotions',
+                'harga' => 4.49,
+                'deskripsi' => 'Refreshing green tea infused with fresh lemon juice. Light, calming, and perfect for a relaxing break.',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
